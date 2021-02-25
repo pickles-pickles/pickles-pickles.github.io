@@ -1,0 +1,164 @@
+#lime-title { color: lime; } #lime-title:hover { color: green; }
+#white-title { color: white; text-shadow: 1px 1px 1px #000000; } #white-title:hover { color: black; }
+#pink-title { color: pink; } #pink-title:hover { color: red; }
+#yellow-title { color: yellow; text-shadow: 1px 1px 1px #000000; } #yellow-title:hover { color: orange; }
+#purple-title { color: purple; } #purple-title:hover { color: #9575cd; }
+#grey-title { color: grey; } #grey-title:hover { color: lightgrey; }
+#green-title { color: green; } #green-title:hover { color: lime; }
+
+.fa-sign-in, .navbar-nav .nav-link { color: white; }
+ #loginn, #login-header { color: white; }
+
+.nav-link:hover{ color: orange; }
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+
+.navbar{background:blue;}
+.nav-link{color:rgb(0,200,255); margin-right:1em !important}
+.nav-link:hover{color:rgb(0,0,0);}
+
+.nav-item{color:rgb(0,0,255);}
+.navbar-brand{cursor:pointer;}
+.navbar-collapse {
+  justify-content: flex-end;}
+.header {
+  background-image: url('https://movingwallpapers.net/Desktop-Wallpapers/sea-Wallpaper-Phone-number-wZS.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4999);
+}
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 {
+  color: #6ab446;
+}
+.description p {
+  color: rgb(205,205,205);
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.description button {
+
+  color: white;
+}
+.description button:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+
+#description-link { color: white; }
+#description-link:hover { color: black; }
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+#features-btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+#features-btn:hover {
+  background-color: #333;
+  border: 1px solid #589b37;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2rem;
+  }
+  
+  .features {
+    margin: 0;
+  }
+}
+
+
+.carousel .carousel-item {
+	 height: 300px;
+}
+ .carousel .carousel-item img{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 min-height: 300px;
+}
+ 
+ #next-to-carousel-img {height: 300px; width: 100%;}
+#carouselbutton { right: 0px; bottom: 0px; position: absolute; z-index: 1; }
+
+.footer { color: white; }
+
+.data-color{ color: white; } .data-color:hover{ color: orange; }
+
+#icon { color: floralwhite;}
+
+.data-inner-img-rotate:hover img{  transition: transform 2s;
+            transform: rotate(360deg);}
+
+
+.tab-pane { background: #f2f6e9 !important; }

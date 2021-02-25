@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>A company that loves dance, food & board games</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <!-- Offline bootstrap -->
+   <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+<script src="among-us.js"></script>
+<script src="https://kit.fontawesome.com/1e172adc76.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css-card-template.css">
+<style>
+#con {bottom: 10px !important;}
+</style>
+
+
+
+ </head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-primary">
+  <a class="navbar-brand" href="#"><img class="rounded-circle" src="images/among-us.png" width="90" height="90" ></a>
+  <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navigation-menu" id="nav-btn">
+  <span class="navbar-toggler-icon" id="icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navigation-menu">
+   <ul class="navbar-nav mr-auto" >
+  <li class="nav-item"><a class="nav-link data-color" href="index.html"><span class="fa fa-home"></span>Home</a></li>
+  <li class="nav-item"><a class="nav-link data-color" href="meet-us.html"><span class="fa fa-smile-o"></span>Meet us</a></li>
+  <li class="nav-item"><a class="nav-link data-color" href="food.html"><span class="fas fa-drumstick-bite"></span>Food</a></li>
+  <li class="nav-item"><a class="nav-link data-color" href="donate.html"><span class="fa fa-money"></span>Donate</a></li>
+  
+  </ul>
+  <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#login-modal" id="loginn">
+                    <span class="fa fa-sign-in"></span > Login</a>
+                </span>
+  </div>
+ 
+</nav>
+
+<div id="login-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            
+            <div class="modal-content">
+                <div class="modal-header bg-primary" id="login-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+					</form>	
+			    </div>
+			</div>	
+		</div>	
+</div>	
+	
+<div class="container">
+
+ <div class="card">
+  <div class="card-header">
+<h3>
+All you need is some food
+</h3>
+  </div>
+  <div class="card-body">
+  
+      <div class="row">
+  <div class="col-6">
+  <h4>
+  It's the food of gods
+  </h4>
+  </div>
+   <div class="col-6">
+  <img id="im" src="images/chicken-card.png" width="250px" height="250px">
+  </div>
+      </div>
+  
+  </div>
+ </div>
+ 
+ </div>
+
+<script>
+$('#cancel-btn').click(function() {
+	$('input').val('');
+});
+
+</script>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
