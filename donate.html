@@ -1,184 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <title>A company that loves dance, food & board games</title>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+
+  <title>A company that loves dance, food & board games</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <!-- Offline bootstrap -->
-   <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-<script src="among-us.js"></script>
-<script src="https://kit.fontawesome.com/1e172adc76.js"></script>
-<link rel="stylesheet" href="style.css">
-<style>
-#con {bottom: 10px !important;}
-</style>
+  <!-- Offline bootstrap -->
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <script src="among-us.js"></script>
+  <script src="https://kit.fontawesome.com/1e172adc76.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #con {
+      bottom: 10px !important;
+    }
+  </style>
 
 
 
- </head>
+</head>
 
 <body>
 
-<nav class="navbar navbar-expand-md bg-primary">
-  <a class="navbar-brand" href="#"><img class="rounded-circle" src="images/among-us.png" width="90" height="90" ></a>
-  <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navigation-menu" id="nav-btn">
-  <span class="navbar-toggler-icon" id="icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navigation-menu">
-   <ul class="navbar-nav mr-auto" >
-  <li class="nav-item"><a class="nav-link data-color" href="index.html"><span class="fa fa-home"></span>Home</a></li>
-  <li class="nav-item"><a class="nav-link data-color" href="meet-us.html"><span class="fa fa-smile-o"></span>Meet us</a></li>
- <li class="nav-item"><a class="nav-link data-color" href="#" data-toggle="tooltip" title="Αυτό το link είναι προσωρινά απενεργοποιημένο. Τώρα εγκράτεια και γυμναστική!">
-	<span class="fas fa-drumstick-bite"></span>Food</a></li>
-  <li class="nav-item"><a class="nav-link data-color" href="donate.html"><span class="fa fa-money"></span>Donate</a></li>
-  
-  </ul>
-  <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#login-modal" id="loginn">
-                    <span class="fa fa-sign-in"></span > Login</a>
-                </span>
-  </div>
- 
-</nav>
+  <nav class="navbar navbar-expand-md bg-primary">
+    <a class="navbar-brand" href="#"><img class="rounded-circle" src="images/among-us.png" width="90" height="90"></a>
+    <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navigation-menu" id="nav-btn">
+      <span class="navbar-toggler-icon" id="icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation-menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link data-color" href="index.html"><span class="fa fa-home"></span>Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link data-color" href="meet-us.html"><span class="fa fa-smile-o"></span>Meet
+            us</a></li>
+        <li class="nav-item"><a class="nav-link data-color" href="#" data-toggle="tooltip"
+            title="Αυτό το link είναι προσωρινά απενεργοποιημένο. Τώρα εγκράτεια και γυμναστική!">
+            <span class="fas fa-drumstick-bite"></span>Food</a></li>
+        <li class="nav-item"><a class="nav-link data-color" href="donate.html"><span
+              class="fa fa-money"></span>Donate</a></li>
 
-<div id="login-modal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            
-            <div class="modal-content">
-                <div class="modal-header bg-primary" id="login-header">
-                    <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </ul>
+      <span class="navbar-text">
+        <a data-toggle="modal" data-target="#login-modal" id="loginn">
+          <span class="fa fa-sign-in"></span> Login</a>
+      </span>
+    </div>
+
+  </nav>
+
+  <div id="login-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+
+      <div class="modal-content">
+        <div class="modal-header bg-primary" id="login-header">
+          <h4 class="modal-title">Login </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-4">
+                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group col-sm-4">
+                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                  placeholder="Password">
+              </div>
+              <div class="col-sm-auto">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label"> Remember me
+                  </label>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
-                            </div>
-                            <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-					</form>	
-			    </div>
-			</div>	
-		</div>	
-	</div>	
-	
-	
-	<div class="card col-8">
-	<div class="card-header">
-	<h3> To donate insert your data</h3>
-	</div>
-	
-	<div class="card-body">
-	<form class="needs-validation" novalidate>
-<div class="row">
-	<div class="form-group col-6">
-	<label for="f-name">First Name</label>
-	<input class="form-control" type="text" id="f-name" name="f-name" placeholder="First Name">
-	</div>
-	<div class="form-group col-6">
-	<label for="l-name">Last Name</label>
-	<input class="form-control" type="text" id="l-name" name="l-name" placeholder="Last Name">
-	</div>
-</div>
-<div class="row">
-	<div class="form-group col-6">
-	<label for="c-number">Card Number</label>
-	<input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" id="c-number" name="c-number" placeholder="Card Number" required>
-	 <div class="invalid-feedback">
-          This field is necessary
+              </div>
+            </div>
+            <div class="row">
+              <button type="submit" class="btn btn-primary ml-3" data-toggle="tooltip" data-placement="bottom"
+                title="This button is not connected to any database. It is just demonstrational.">Log in</button>
+            </div>
+          </form>
         </div>
-	</div>
-	<div class="form-group col-6">
-	<label for="c-h-name">Card Holder Name</label>
-	<input class="form-control" type="text" id="c-h-name" name="c-h-name" placeholder="Card Holder Name" required>
-	<div class="invalid-feedback">
-          This field is necessary
-        </div>
-	</div>
-</div>
-<div class="row">
-	<div class="form-group col-3">
-	<label for="c-v-number">Card Protection Number</label>
-	<input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" id="c-v-number" name="c-v-number" placeholder="Card Validation Number" required>
-	 <div class="invalid-feedback">
-          This field is necessary
-        </div>
-	</div>
-</div>
-<div class="row">
-	<div class="form-group col-6">
-	<label for="d-amount">Amount you wish to donate</label>
-	<input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" id="d-amount" name="d-amount" placeholder="Donation Amount" required>
-	<div class="invalid-feedback">
-          This field is necessary
-        </div>
-	</div>
-	<div class="form-group col-3">
-	<label for="currency">Select Currency</label>
-	<select class="form-control" id="currency">
-	<option>€</option>
-	<option>$</option>
-	<option>£</option>
-	</select>
-	</div>
-</div>
-<div class="row">	
-	<div class="form-group col-3" id="con">
-	<input class="form-check-input" type="checkbox" id="d-amount-checkbox" name="d-amount-checkbox" value="" required>
-	<label for="d-amount-checkbox">Yes, this is the amount I wish to donate</label>
-	</div>
-</div>
-<div class="row">	
-	<button type="submit" class="btn btn-primary mr-1"
-  data-toggle="tooltip" title="This button is not connected to any database. It is just demonstrational.">Donate</button>
-	<button class="btn btn-secondary" id="cancel-btn">Cancel</button>
-</div>	
-	</form>
-	
-	</div>
-	
-	</div>	
+      </div>
+    </div>
+  </div>
 
 
-<script>
-$('#cancel-btn').click(function() {
-	$('input').val('');
-});
+  <div class="card col-8">
+    <div class="card-header">
+      <h3> To donate insert your data</h3>
+    </div>
 
-</script>
-<script>
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    var forms = document.getElementsByClassName('needs-validation');
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
+    <div class="card-body">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="f-name">First Name</label>
+            <input class="form-control" type="text" id="f-name" name="f-name" placeholder="First Name">
+          </div>
+          <div class="form-group col-6">
+            <label for="l-name">Last Name</label>
+            <input class="form-control" type="text" id="l-name" name="l-name" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="c-number">Card Number</label>
+            <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" id="c-number" name="c-number"
+              placeholder="Card Number" required>
+            <div class="invalid-feedback">
+              This field is necessary
+            </div>
+          </div>
+          <div class="form-group col-6">
+            <label for="c-h-name">Card Holder Name</label>
+            <input class="form-control" type="text" id="c-h-name" name="c-h-name" placeholder="Card Holder Name"
+              required>
+            <div class="invalid-feedback">
+              This field is necessary
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-3">
+            <label for="c-v-number">Card Protection Number</label>
+            <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" id="c-v-number"
+              name="c-v-number" placeholder="Card Validation Number" required>
+            <div class="invalid-feedback">
+              This field is necessary
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label for="d-amount">Amount you wish to donate</label>
+            <input class="form-control" type="text" pattern="[0-9]*" inputmode="numeric" id="d-amount" name="d-amount"
+              placeholder="Donation Amount" required>
+            <div class="invalid-feedback">
+              This field is necessary
+            </div>
+          </div>
+          <div class="form-group col-3">
+            <label for="currency">Select Currency</label>
+            <select class="form-control" id="currency">
+              <option>€</option>
+              <option>$</option>
+              <option>£</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-3" id="con">
+            <input class="form-check-input" type="checkbox" id="d-amount-checkbox" name="d-amount-checkbox" value=""
+              required>
+            <label for="d-amount-checkbox">Yes, this is the amount I wish to donate</label>
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn btn-primary mr-1" data-toggle="tooltip"
+            title="This button is not connected to any database. It is just demonstrational.">Donate</button>
+          <button class="btn btn-secondary" id="cancel-btn">Cancel</button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <script>
+    $('#cancel-btn').click(function () {
+      $('input').val('');
     });
-  }, false);
-})();
-</script>
+
+  </script>
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
 </body>
+
 </html>
