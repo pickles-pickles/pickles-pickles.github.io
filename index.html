@@ -1,303 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <title>A company that loves dance, food & board games</title>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- <!--
+<head>
+
+  <title>A company that loves dance, food & board games</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
- <!-- Offline bootstrap -->
-   <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-<script src="among-us.js"></script>
-<script src="https://kit.fontawesome.com/1e172adc76.js"></script>
-<link rel="stylesheet" href="style.css">
-<style></style>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- Offline bootstrap -->
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <script src="among-us.js"></script>
+  <script src="https://kit.fontawesome.com/1e172adc76.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style></style>
 
 
 
- </head>
+</head>
 
 <body>
 
-<nav class="navbar navbar-expand-md bg-primary">
-  <a class="navbar-brand" href="#"><img class="rounded-circle" src="images/among-us.png" width="90" height="90" ></a>
-  <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navigation-menu" id="nav-btn">
-  <span class="navbar-toggler-icon" id="icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navigation-menu">
-   <ul class="navbar-nav mr-auto" >
-  <li class="nav-item"><a class="nav-link data-color" href="index.html"><span class="fa fa-home"></span>Home</a></li>
-  <li class="nav-item"><a class="nav-link data-color" href="meet-us.html"><span class="fa fa-smile-o"></span>Meet us</a></li>
-  <li class="nav-item"><a class="nav-link data-color" href="#" data-toggle="tooltip" title="Αυτό το link είναι προσωρινά απενεργοποιημένο. Τώρα εγκράτεια και γυμναστική!">
-	<span class="fas fa-drumstick-bite"></span>Food</a></li>
-  <li class="nav-item"><a class="nav-link data-color" href="donate.html"><span class="fa fa-money"></span>Donate</a></li>
-  
-  </ul>
-  <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#login-modal" id="loginn">
-                    <span class="fa fa-sign-in"></span > Login</a>
-                </span>
-	<button class="btn btn-sm btn-secondary ml-2" id="bg-btn">Night mode off</button>
-  </div>
- 
-</nav>
+  <nav class="navbar navbar-expand-md bg-primary">
+    <a class="navbar-brand" href="#"><img class="rounded-circle" src="images/among-us.png" width="90" height="90"></a>
+    <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navigation-menu" id="nav-btn">
+      <span class="navbar-toggler-icon" id="icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation-menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link data-color" href="index.html"><span class="fa fa-home"></span>Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link data-color" href="meet-us.html"><span class="fa fa-smile-o"></span>Meet
+            us</a></li>
+        <li class="nav-item"><a class="nav-link data-color" href="#" data-toggle="tooltip"
+            title="Αυτό το link είναι προσωρινά απενεργοποιημένο. Τώρα εγκράτεια και γυμναστική!">
+            <span class="fas fa-drumstick-bite"></span>Food</a></li>
+        <li class="nav-item"><a class="nav-link data-color" href="donate.html"><span
+              class="fa fa-money"></span>Donate</a></li>
 
-<div id="login-modal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            
-            <div class="modal-content">
-                <div class="modal-header bg-primary" id="login-header">
-                    <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
-                            </div>
-                            <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-					</form>	
-			    </div>
-			</div>	
-		</div>	
-	</div>	
-	
-<ul class="nav nav-tabs">
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#quote" id="title">Quote</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#lime-quote" id="lime-title">Lime</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#white-quote" id="white-title">Άσπρος</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pink-quote" id="pink-title">Ροζ</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#yellow-quote" id="yellow-title">Κάτρανος</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#purple-quote" id="purple-title">Μώβ</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#grey-quote" id="grey-title">Mr Grey</a></li>
-<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#green-quote" id="green-title">Πρασινούλα</a></li>
-</ul>
-
-
-<div class="tab-content">
-<div class="tab-pane" id="quote">
-<p>
-Μία μικρή φράση για τον κάθε έναν
-</p>
-</div>
-<div class="tab-pane" id="lime-quote">
-<p class="blockquote-footer">
-Lime is the creator
-</p>
-</div>
-<div class="tab-pane" id="white-quote">
-<p>
---Κάνω μπίζνες στο χορό, κάνω μπίζνες στην παρέα,
- το γάλα μου και το τυρί είναι τα πιο ωραία
-</p>
-</div>
-<div class="tab-pane" id="pink-quote">
-<p>
---Είμαι η οικοδέσποινα των σουαρέ
-</p>
-</div>
-<div class="tab-pane" id="yellow-quote">
-<p>
---Το κοτόπουλό μου, ελιξήριο αθανασίας.
-</p>
-</div>
-<div class="tab-pane" id="purple-quote">
-<p>
---Είμαι η οικοδέσποινα των sleepover.
-</p>
-</div>
-<div class="tab-pane" id="grey-quote">
-<p>
---Είμαι ο οικοδεσπότης. Αλά συνήθως είμαι ακριβοθώρητος.
-</p>
-</div>
-<div class="tab-pane" id="green-quote">
-<p>
---Και, όμως, υπάρχω
-</p>
-</div>
-</div>
-
-
-<header class="page-header header container-fluid">
-<div class="overlay"></div>
-<div class="description">
-
-<h1 >Καλώς ήρθατε στο site μας</h1>
-<p>Αυτό είναι ένα site για εμάς. Μια παρέα που απολαμβάνει το χορό, φαγητό και τα επιτραπέζια!</p>
-<button class="btn btn-success btn-lg"><a href="meet-us.html" id="description-link">Tell Me More!<a></button>
-</div>
-</header>
-
-<div class="container features">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title text">Γνωριστήκαμε στο χορό</h3>
-     <img src="images/dance-draw.jpg" class="img-fluid">
-      <p class="text">Το πάθος μας για τη σάλσα μας οδήγησε στην κορυφαία σχολή χορού της πόλης.
-	     Αρχίσαμε να βγαίνουμε είδαμε ότι έχουμε χημεία και τα υπόλοιπα είναι ιστορία.</p>
+      </ul>
+      <span class="navbar-text">
+        <a data-toggle="modal" data-target="#login-modal" id="loginn">
+          <span class="fa fa-sign-in"></span> Login</a>
+      </span>
+      <button class="btn btn-sm btn-secondary ml-2" id="bg-btn">Night mode off</button>
     </div>
-   
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title text">Δεθήκαμε στο φαγητό</h3>
-       
- <img src="images/food-draw.jpg" class="img-fluid">
-      <p class="text">Και επειδή νηστικό αρκούδι δεν χορεύει οι συναντήσεις μας για χορό γίνονται συνοδεία νοστιμότατων εδεσμάτων.
-	     Και εν τέλει αποδείχθηκε ότι όντως το φαγητό φέρνει τους ανθρώπους κοντά!</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12">    
-    <h3 class="feature-title text">Get in Touch!</h3>
-<div class="form-group">
-  <input type="text" class="form-control" placeholder="Name" name="">
-</div>
-<div class="form-group">
-  <input type="email" class="form-control" placeholder="Email Address" name="email">
-</div>
-<div class="form-group">
-  <textarea class="form-control" rows="4"></textarea>
-</div>
-<div>
-<input type="submit" class="btn btn-secondary btn-block" id="features-btn" value="Send" name="">
-    </div>
-  </div> 
-</div>
 
+  </nav>
 
-<div class="container">
-<div class="row">
-<div class="col-sm-12 col-md-8">
+  <div id="login-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
 
-<div class="carousel slide" data-ride="carousel" id="mycarousel" data-interval="1500">
-
-
-<ul class="carousel-indicators">
-<li  data-slide-to="0" data-target="#mycarousel" class="active"></li>
-<li  data-slide-to="1" data-target="#mycarousel"></li>
-<li  data-slide-to="2" data-target="#mycarousel"></li>
-</ul>
-
-<a class="carousel-control-prev" href="#mycarousel" data-slide="prev">
-  <span class="carousel-control-prev-icon"></span>
-</a>
-<a class="carousel-control-next"href="#mycarousel" data-slide="next">
-  <span class="carousel-control-next-icon"></span>
-</a>
-
-
-<div class="carousel-inner">
-
-
-<div class="carousel-item active">
-<div class="carousel-caption">
-<h3>Απολαμβάνουμε υγιεινά snack </h3>
-</div>
-<img class="d-block img-fluid" src="images/dry-fruit.jpg">
-</div>
-
-<div class="carousel-item">
-<div class="carousel-caption">
-<h3> Απολαμβάνουμε επιτραπέζια</h3>
-</div>
-<img class="d-block img-fluid" src="images/board-game.jpg">
-</div>
-
-<div class="carousel-item">
-<div class="carousel-caption">
-<h3> Απολαμβάνουμε λουκούλεια δείπνα</h3>
-</div>
-<img class="d-block img-fluid" src="images/chicken.jpg">
-</div>
-
-<div class="btn-group" id="carouselbutton">
-<button type="button" class="btn btn-primary btn-md" id="carouselpause">
-<span class="fa fa-pause"></span>
-</button>
-<button type="button" class="btn btn-primary btn-md" id="carouselplay">
-<span class="fa fa-play"></span>
-</button>
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-<div class="col-sm-10 col-md-4">
-<img class="border-0 shadow-none" src="images/smiley-face-bg.png" id="next-to-carousel-img">
-</div>
-
-</div>
-</div>
-
-
-<footer class="footer">
-        <div class="container bg-primary">
-            <div class="row">             
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a class="data-color" href="index.html">Home</a></li>
-                        <li><a class="data-color" href="meet-us.html">Meet us</a></li>
-                        <li><a class="data-color" href="#">Food</a></li>
-                        <li><a class="data-color" href="donate.html">Donate</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              123, Left Right Left Avenue<br>
-		              Salsa on1, Danceton<br>
-		              Athens<br>
-		              <i class="fa fa-phone fa-lg"></i>: +30 123 567 1<br>
-                      <i class="fa fa-fax fa-lg"></i>: +30 123 567 1<br>
-                      <i class="fa fa-envelope fa-lg"></i>: 
-                      <a class="data-color" href="mailto:dance@food.net">dance@food.net</a>
-
-		           </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                  <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-
-                </div>
-           </div>
-           <div class="row justify-content-center">             
-                <div class="col-auto">
-                    <p>© Copyright 2021 Lime</p>
-                </div>
-           </div>
+      <div class="modal-content">
+        <div class="modal-header bg-primary" id="login-header">
+          <h4 class="modal-title">Login </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-    </footer>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-4">
+                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group col-sm-4">
+                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                  placeholder="Password">
+              </div>
+              <div class="col-sm-auto">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                title="This button is not connected to any database. It is just demonstrational.">Log in</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#quote" id="title">Quote</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#lime-quote" id="lime-title">Lime</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#white-quote" id="white-title">Άσπρος</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pink-quote" id="pink-title">Ροζ</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#yellow-quote" id="yellow-title">Κάτρανος</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#purple-quote" id="purple-title">Μώβ</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#grey-quote" id="grey-title">Mr Grey</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#green-quote" id="green-title">Πρασινούλα</a></li>
+  </ul>
+
+
+  <div class="tab-content">
+    <div class="tab-pane" id="quote">
+      <p>
+        Μία μικρή φράση για τον κάθε έναν
+      </p>
+    </div>
+    <div class="tab-pane" id="lime-quote">
+      <p class="blockquote-footer">
+        Lime is the creator
+      </p>
+    </div>
+    <div class="tab-pane" id="white-quote">
+      <p>
+        --Κάνω μπίζνες στο χορό, κάνω μπίζνες στην παρέα,
+        το γάλα μου και το τυρί είναι τα πιο ωραία
+      </p>
+    </div>
+    <div class="tab-pane" id="pink-quote">
+      <p>
+        --Είμαι η οικοδέσποινα των σουαρέ
+      </p>
+    </div>
+    <div class="tab-pane" id="yellow-quote">
+      <p>
+        --Το κοτόπουλό μου, ελιξήριο αθανασίας.
+      </p>
+    </div>
+    <div class="tab-pane" id="purple-quote">
+      <p>
+        --Είμαι η οικοδέσποινα των sleepover.
+      </p>
+    </div>
+    <div class="tab-pane" id="grey-quote">
+      <p>
+        --Είμαι ο οικοδεσπότης. Αλά συνήθως είμαι ακριβοθώρητος.
+      </p>
+    </div>
+    <div class="tab-pane" id="green-quote">
+      <p>
+        --Και, όμως, υπάρχω
+      </p>
+    </div>
+  </div>
+
+
+  <header class="page-header header container-fluid">
+    <div class="overlay"></div>
+    <div class="description">
+
+      <h1>Καλώς ήρθατε στο site μας</h1>
+      <p>Αυτό είναι ένα site για εμάς. Μια παρέα που απολαμβάνει το χορό, φαγητό και τα επιτραπέζια!</p>
+      <button class="btn btn-success btn-lg features-btn"><a href="meet-us.html" id="description-link"><span class="features-span">Tell Me More!</span><a></button>
+    </div>
+  </header>
+
+  <div class="container features">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h3 class="feature-title text">Γνωριστήκαμε στο χορό</h3>
+        <img src="images/dance-draw.jpg" class="img-fluid">
+        <p class="text">Το πάθος μας για τη σάλσα μας οδήγησε στην κορυφαία σχολή χορού της πόλης.
+          Αρχίσαμε να βγαίνουμε είδαμε ότι έχουμε χημεία και τα υπόλοιπα είναι ιστορία.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h3 class="feature-title text">Δεθήκαμε στο φαγητό</h3>
+
+        <img src="images/food-draw.jpg" class="img-fluid">
+        <p class="text">Και επειδή νηστικό αρκούδι δεν χορεύει οι συναντήσεις μας για χορό γίνονται συνοδεία
+          νοστιμότατων εδεσμάτων.
+          Και εν τέλει αποδείχθηκε ότι όντως το φαγητό φέρνει τους ανθρώπους κοντά!</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <form>
+          <h3 class="feature-title text">Get in Touch!</h3>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name" name="">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email Address" name="email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-secondary btn-block features-btn" id="features-btn" data-toggle="tooltip"
+              data-placement="bottom" title="This button is not connected to any database. It is just demonstrational.">
+              <span class="features-span">Send</span>
+            </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+
+        <div class="carousel slide" data-ride="carousel" id="mycarousel" data-interval="1500">
+
+
+          <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#mycarousel" class="active"></li>
+            <li data-slide-to="1" data-target="#mycarousel"></li>
+            <li data-slide-to="2" data-target="#mycarousel"></li>
+          </ul>
+
+          <a class="carousel-control-prev" href="#mycarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#mycarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+
+          <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <h3>Απολαμβάνουμε υγιεινά snack </h3>
+              </div>
+              <img class="d-block img-fluid" src="images/dry-fruit.jpg">
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h3> Απολαμβάνουμε επιτραπέζια</h3>
+              </div>
+              <img class="d-block img-fluid" src="images/board-game.jpg">
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h3> Απολαμβάνουμε λουκούλεια δείπνα</h3>
+              </div>
+              <img class="d-block img-fluid" src="images/chicken.jpg">
+            </div>
+
+            <div class="btn-group" id="carouselbutton">
+              <button type="button" class="btn btn-primary btn-md" id="carouselpause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button type="button" class="btn btn-primary btn-md" id="carouselplay">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-10 col-md-4">
+        <img class="border-0 shadow-none" src="images/smiley-face-bg.png" id="next-to-carousel-img">
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container bg-primary">
+      <div class="row">
+        <div class="col-4 offset-1 col-sm-2">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="data-color" href="index.html">Home</a></li>
+            <li><a class="data-color" href="meet-us.html">Meet us</a></li>
+            <li><a class="data-color" href="#">Food</a></li>
+            <li><a class="data-color" href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <div class="col-7 col-sm-5">
+          <h5>Our Address</h5>
+          <address>
+            123, Left Right Left Avenue<br>
+            Salsa on1, Danceton<br>
+            Athens<br>
+            <i class="fa fa-phone fa-lg"></i>: +30 123 567 1<br>
+            <i class="fa fa-fax fa-lg"></i>: +30 123 567 1<br>
+            <i class="fa fa-envelope fa-lg"></i>:
+            <a class="data-color" href="mailto:dance@food.net">dance@food.net</a>
+
+          </address>
+        </div>
+        <div class="col-12 col-sm-4 align-self-center">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                class="fa fa-linkedin"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p>© Copyright 2021 Lime</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>
+
 </html>

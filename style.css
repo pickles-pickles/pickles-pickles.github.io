@@ -22,10 +22,16 @@ body {
 .nav-link{color:rgb(0,200,255); margin-right:1em !important}
 .nav-link:hover{color:rgb(0,0,0);}
 
-.nav-item{color:rgb(0,0,255);}
-.navbar-brand{cursor:pointer;}
+.nav-item{
+  color:rgb(0,0,255);
+}
+.navbar-brand, .navbar-text{
+  cursor:pointer;
+}
 .navbar-collapse {
-  justify-content: flex-end;}
+  justify-content: flex-end;
+}
+
 .header {
   background-image: url('https://movingwallpapers.net/Desktop-Wallpapers/sea-Wallpaper-Phone-number-wZS.jpg');
   background-size: cover;
@@ -92,28 +98,35 @@ body {
 .features input {
     border-radius: 0;
 }
-#features-btn {
+.features-btn {
   background-color: #589b37;
   border: 1px solid #589b37;
   color: #fff;
   margin-top: 20px;
-}
-#features-btn:hover {
-  background-color: #333;
-  border: 1px solid #589b37;
+  transition: 2s all;  position: relative;
 }
 
-.page-footer {
-  background-color: #222;
-  color: #ccc;
-  padding: 60px 0 30px;
-}
-.footer-copyright {
-  color: #666;
-  padding: 40px 0;
+.features-span { position: relative; z-index: 2; }
+
+.features-btn:after { 
+position: absolute;
+content: "";
+background: lime;
+color: white; 
+width: 0;
+right:0; 
+top: 0; 
+
+transition: 2s all;}
+
+.features-btn:hover:after {
+  width: 100%;
+  height: 100%;
 }
 
-
+.features-btn:hover {
+  color: black;
+}
 @media (max-width: 575.98px) {
   .description {
     left: 0;
