@@ -33,7 +33,7 @@ body {
 }
 
 .header {
-  background-image: url('https://movingwallpapers.net/Desktop-Wallpapers/sea-Wallpaper-Phone-number-wZS.jpg');
+  background-image: url('images/sea.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -46,7 +46,7 @@ body {
   min-width: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.4999);
+  background: rgba(0, 0, 0, 0.2);
 }
 .description {
   left: 50%;
